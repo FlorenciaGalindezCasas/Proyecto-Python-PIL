@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="home">
+    <div class="container text-home">
+    {% if name is none %}
+        <h1><b>Bienvenido a EduGestion</b></h1>
+    {% else %}
+        <h1>Hola {{ name }}!</h1>
+    {% endif %}
+    <p>Esta es la página de inicio.</p>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+

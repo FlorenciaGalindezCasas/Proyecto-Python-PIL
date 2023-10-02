@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class="container">
+		<h1>Login</h1>
+        <p>Accede a tu cuenta</p>
+        <div class="login">
+		<form method="post" action="/login">
+            <div class="mb-3">
+			<input type="hidden" name="csrf_token">
+			<label class="form-label" for="username">Username:</label>
+			<input class="form-control" type="text" name="username" required><br>
+			<label class="form-label" for="password">Password:</label>
+			<input class="form-control" type="password" name="password" required><br>
+            <input class="btn btn-primary" type="submit" value="Login">
+            </div>
+		</form>
+        </div>
+
+	</div>
+{% endblock %}

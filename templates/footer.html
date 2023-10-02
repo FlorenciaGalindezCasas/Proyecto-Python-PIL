@@ -1,0 +1,59 @@
+<footer>
+ <nav class="foot d-flex navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid " id="navbarNav">
+    <div class="footer ">
+      <ul class="d-flex flex-row">       
+        <li class="nav-item">
+        <li class="nav-item">
+            <a class="nav-link links" href="#" id="open-modal">¿COMO FUNCIONA?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+ 
+<div id="myModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+       <span class="close" id="close-modal">&times;</span>
+      <div class="modal-header">
+        <h5 class="modal-title"><b>¿Cómo funciona EduGestion?</b></h5>
+      </div>
+      <div class="modal-body">
+        <p> En EduGestion podes administrar los datos personales y académicos de alumnos y profesores.
+        <br>Podes agregar información sobre la persona, carrera, institución y rol (alumno o docente).<br>
+        Podes consultar información sobre alguna persona y sus datos académicos.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById('open-modal');
+    var span = document.getElementById('close-modal');
+
+    btn.onclick = function () {
+        modal.style.display = 'block';
+    }
+
+    span.onclick = function () {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+</footer>

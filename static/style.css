@@ -1,0 +1,82 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbarNav{
+    justify-content: right;
+}
+
+.btn-collap{
+    border: 3px solid white !important
+}
+
+.home{
+    background-image: url("https://img.lagacetasalta.com.ar/fotos/notas/2018/06/27/107122_20180627231446.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0px;
+}
+
+.text-home{
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 4%;
+}
+
+
+.text{
+    align-items: flex-start;
+}
+
+.navbar{
+    background-color: #797C7F; 
+    
+}
+
+.foot{
+  padding:0px !important
+}
+
+.navbar a{
+    color: white
+}
+
+.links {
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+}
+
+.links:hover{
+    color:black;
+    width: 100%; 
+    bottom: 0;
+    border-bottom: 1px solid;
+}
+
+footer{
+  width:100%;
+  position:absolute; 
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0px;
+  padding:3% 0 3% 0;
+}
+
+.login{
+    margin-bottom: 50px 
+}
+
+#myModal{
+    top:5%;
+}
